@@ -1,0 +1,6 @@
+#!/bin/bash
+service network stop
+ifconfig bond0 down
+rmmod bonding
+service network start
+
